@@ -1,0 +1,5 @@
+Parsing begins.
+Whitespace	mix, commas, dots...
+New lines? Yes!
+Math: 3*3=9; 10-2=8.
+Ovuvue-vue name split.
