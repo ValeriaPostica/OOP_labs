@@ -25,7 +25,7 @@ public:
     float getPPI() const { return ppi; }
     string getModel() const { return model; }
 
-    // Compare only by total pixel area (simple & clear)
+    // Compare only by total pixel area
     void compareSize(const Display& other) const {
         long long areaA = width * height;
         long long areaB = other.width * other.height;
@@ -57,7 +57,7 @@ public:
     }
 
     void compareWithMonitor(const Display& other) const {
-        cout << "== Comparing \"" << model << "\" with \"" << other.model << "\" ==\n";
+        cout << "Comparing \"" << model << "\" with \"" << other.model << "\" \n";
         compareSize(other);
         compareSharpness(other);
         cout << endl;

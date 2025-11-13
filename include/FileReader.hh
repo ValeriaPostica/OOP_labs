@@ -1,7 +1,3 @@
-//
-// Slightly simplified reader that preserves newlines and prints a minimal error when missing.
-//
-
 #ifndef FILEREADER_HH
 #define FILEREADER_HH
 
@@ -28,4 +24,4 @@ public:
     }
 };
 
-#endif // FILEREADER_HH
+#endif

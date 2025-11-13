@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Display.hpp"
+#include "Display.hh"
 
 using namespace std;
 
@@ -27,7 +27,7 @@ public:
         assignedDisplays.push_back(d);
     }
 
-    // Compare each display with the next one in the list (sequential)
+    // Compare each display with the next one in the list
     void assist() const {
         if (assignedDisplays.empty()) {
             cout << "Assistant " << assistantName << ": no displays assigned.\n\n";

@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 
     TextData data(name, text);
 
-    cout << "=== Text Report ===\n";
+    cout << "Text Report\n";
     cout << "Name: " << data.getFilename() << "\n";
     cout << "Content:\n" << data.getText() << "\n";
     cout << "Vowels: " << data.getNumberOfVowels() << "\n";

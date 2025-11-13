@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
         string txt = fr.readFileIntoString(path);
         TextData data(name, txt);
 
-        cout << "\n=== Report #" << reportIndex++ << " ===\n";
+        cout << "\nReport #" << reportIndex++ << "\n";
         cout << "Name: " << data.getFilename() << "\n";
         cout << "Vowels: " << data.getNumberOfVowels() << "\n";
         cout << "Consonants: " << data.getNumberOfConsonants() << "\n";
