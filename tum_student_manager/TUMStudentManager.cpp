@@ -1,6 +1,5 @@
-#include "TUMStudentManager.h"
-#include "FileManager.h"
-#include "Logger.h"
+#include "include/TUMStudentManager.h"
+#include "include/FileManager.h"
 #include <iostream>
 #include <sstream>
 #include <iomanip>
@@ -19,11 +18,10 @@ void TUMStudentManager::initializeSampleData() {
     faculties.push_back(Faculty("Faculty of Computers, Informatics and Microelectronics", 
                                "FCIM", StudyField::SOFTWARE_ENGINEERING));
     faculties.push_back(Faculty("Faculty of Food Technology", 
-                               "FFT", StudyField::FOOD_TECHNOLOGY));
-    faculties.push_back(Faculty("Faculty of Mechanical Engineering", 
-                               "FME", StudyField::MECHANICAL_ENGINEERING));
+                               "FTA", StudyField::FOOD_TECHNOLOGY));
+    faculties.push_back(Faculty("Faculty of Mechanical Engineering and Transport", 
+                               "FIMIT", StudyField::MECHANICAL_ENGINEERING));
     
-    Logger::logOperation("SYSTEM_START", "Initialized with sample data");
 }
 
 void TUMStudentManager::run() {
@@ -119,10 +117,6 @@ void TUMStudentManager::createAndAssignStudent(Faculty& faculty) {
         Student student(firstName, lastName, email, enrollmentDate, dateOfBirth);
         faculty.addStudent(student);
         
-        Logger::logOperation("STUDENT_CREATED", 
-            "Student " + firstName + " " + lastName + " (" + email + ") added to " + faculty.getName());
-        cout << "Student created and assigned successfully!" << endl;
-        
     } catch (const exception& e) {
         cout << "Error creating student: " << e.what() << endl;
     }
@@ -134,8 +128,6 @@ void TUMStudentManager::graduateStudent(Faculty& faculty) {
     getline(cin, email);
     
     if (faculty.graduateStudent(email)) {
-        Logger::logOperation("STUDENT_GRADUATED", 
-            "Student " + email + " graduated from " + faculty.getName());
         cout << "Student graduated successfully!" << endl;
     } else {
         cout << "Cannot graduate student: " << email << " (student not found or already graduated)" << endl;
@@ -239,8 +231,6 @@ void TUMStudentManager::createNewFaculty() {
     Faculty faculty(name, abbreviation, studyField);
     faculties.push_back(faculty);
     
-    Logger::logOperation("FACULTY_CREATED", 
-        "Faculty " + name + " (" + abbreviation + ") created");
     cout << "Faculty created successfully!" << endl;
 }
 
