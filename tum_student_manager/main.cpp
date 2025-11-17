@@ -1,9 +1,9 @@
-#include "include/TUMStudentManager.h"
+#include "include/ConsoleUI.h"
 
 using namespace std;
 
 int main() {
-    TUMStudentManager manager;
-    manager.run();
+    ConsoleUI ui;
+    ui.run();
     return 0;
 }

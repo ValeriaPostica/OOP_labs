@@ -6,16 +6,15 @@ using namespace std;
 
 const string FileManager::DATA_FILE = "tum_data.dat";
 
-void FileManager::saveData(const vector<Faculty>& faculties) {
+bool FileManager::saveData(const vector<Faculty>& faculties) {
     ofstream file(DATA_FILE);
     if (!file.is_open()) {
-        cout << "Error: Could not open file for saving data." << endl;
-        return;
+        return false;
     }
-    
+
     file << "TUM_STUDENT_MANAGER_DATA" << endl;
     file.close();
-    cout << "Data saved successfully!" << endl;
+    return true;
 }
 
 vector<Faculty> FileManager::loadData() {
@@ -23,19 +22,12 @@ vector<Faculty> FileManager::loadData() {
     ifstream file(DATA_FILE);
     
     if (!file.is_open()) {
-        cout << "No previous data found. Starting fresh." << endl;
         return faculties;
     }
-    
+
     string line;
     getline(file, line);
-    
-    if (line == "TUM_STUDENT_MANAGER_DATA") {
-        cout << "Previous data loaded successfully!" << endl;
-    } else {
-        cout << "Data file corrupted. Starting fresh." << endl;
-    }
-    
+    // Basic header check; actual parsing not implemented yet.
     file.close();
     return faculties;
 }

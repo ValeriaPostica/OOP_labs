@@ -12,7 +12,7 @@ private:
     static const string DATA_FILE;
 
 public:
-    static void saveData(const vector<Faculty>& faculties);
+    static bool saveData(const vector<Faculty>& faculties);
     static vector<Faculty> loadData();
 };
 
