@@ -6,10 +6,10 @@
 
 using namespace std;
 
-ConsoleUI::ConsoleUI() : manager() {}
+ConsoleUI::ConsoleUI() : storage(), manager(storage) {}
 
 void ConsoleUI::run() {
-    cout << "=== Technical University of Moldova - Student Management System ===" << endl;
+    cout << " Technical University of Moldova - Student Management System " << endl;
     while (true) {
         displayMainMenu();
         string choice;
@@ -31,7 +31,7 @@ void ConsoleUI::run() {
 }
 
 void ConsoleUI::displayMainMenu() {
-    cout << "\n--- MAIN MENU ---" << endl;
+    cout << "\n MAIN MENU " << endl;
     cout << "1. Faculty Operations" << endl;
     cout << "2. General Operations" << endl;
     cout << "0. Exit" << endl;
@@ -44,7 +44,7 @@ int ConsoleUI::selectFacultyIndex() {
         cout << "No faculties available. Please create a faculty first." << endl;
         return -1;
     }
-    cout << "\n--- Select Faculty ---" << endl;
+    cout << "\n Select Faculty " << endl;
     for (size_t i = 0; i < faculties.size(); ++i) {
         cout << (i + 1) << ". " << faculties[i].toString() << endl;
     }
@@ -70,7 +70,7 @@ void ConsoleUI::facultyOperations() {
     size_t facultyIndex = static_cast<size_t>(idx);
 
     while (true) {
-        cout << "\n--- FACULTY OPERATIONS: " << manager.getFaculties()[facultyIndex].getName() << " ---" << endl;
+        cout << "\n FACULTY OPERATIONS: " << manager.getFaculties()[facultyIndex].getName() << endl;
         cout << "1. Create and assign a student" << endl;
         cout << "2. Graduate a student" << endl;
         cout << "3. Display enrolled students" << endl;
@@ -140,7 +140,7 @@ void ConsoleUI::graduateStudent(size_t facultyIndex) {
 
 void ConsoleUI::displayEnrolledStudents(size_t facultyIndex) {
     auto enrolled = manager.getEnrolledStudents(facultyIndex);
-    cout << "\n--- Enrolled Students in " << manager.getFaculties()[facultyIndex].getName() << " ---" << endl;
+    cout << "\n Enrolled Students in " << manager.getFaculties()[facultyIndex].getName() << endl;
     if (enrolled.empty()) cout << "No enrolled students." << endl;
     else {
         for (const auto& s : enrolled) cout << s.toString() << endl;
@@ -149,7 +149,7 @@ void ConsoleUI::displayEnrolledStudents(size_t facultyIndex) {
 
 void ConsoleUI::displayGraduates(size_t facultyIndex) {
     auto grads = manager.getGraduates(facultyIndex);
-    cout << "\n--- Graduates from " << manager.getFaculties()[facultyIndex].getName() << " ---" << endl;
+    cout << "\n Graduates from " << manager.getFaculties()[facultyIndex].getName() << endl;
     if (grads.empty()) cout << "No graduates." << endl;
     else {
         for (const auto& s : grads) cout << s.toString() << endl;
@@ -167,7 +167,7 @@ void ConsoleUI::checkStudentInFaculty(size_t facultyIndex) {
 
 void ConsoleUI::generalOperations() {
     while (true) {
-        cout << "\n--- GENERAL OPERATIONS ---" << endl;
+        cout << "\n GENERAL OPERATIONS " << endl;
         cout << "1. Create new faculty" << endl;
         cout << "2. Search student faculty" << endl;
         cout << "3. Display all faculties" << endl;
@@ -223,7 +223,7 @@ void ConsoleUI::searchStudentFaculty() {
 
 void ConsoleUI::displayAllFaculties() {
     const auto& faculties = manager.getFaculties();
-    cout << "\n--- All Faculties ---" << endl;
+    cout << "\n All Faculties " << endl;
     if (faculties.empty()) cout << "No faculties available." << endl;
     else for (const auto& f : faculties) cout << f.toString() << endl;
 }
@@ -246,7 +246,7 @@ void ConsoleUI::displayFacultiesByField() {
     else if (fieldChoice == "5") selectedField = StudyField::VETERINARY_MEDICINE;
     else { cout << "Invalid field choice." << endl; return; }
 
-    cout << "\n--- Faculties in ";
+    cout << "\n Faculties in ";
     switch (selectedField) {
         case StudyField::MECHANICAL_ENGINEERING: cout << "Mechanical Engineering"; break;
         case StudyField::SOFTWARE_ENGINEERING: cout << "Software Engineering"; break;
@@ -254,7 +254,7 @@ void ConsoleUI::displayFacultiesByField() {
         case StudyField::URBANISM_ARCHITECTURE: cout << "Urbanism Architecture"; break;
         case StudyField::VETERINARY_MEDICINE: cout << "Veterinary Medicine"; break;
     }
-    cout << " ---" << endl;
+    cout << endl;
 
     bool found = false;
     const auto& faculties = manager.getFaculties();

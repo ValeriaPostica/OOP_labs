@@ -1,0 +1,3 @@
+Faculty of Computers, Informatics and Microelectronics|FCIM|SOFTWARE_ENGINEERING
+Faculty of Food Technology|FTA|FOOD_TECHNOLOGY
+Faculty of Mechanical Engineering and Transport|FIMIT|MECHANICAL_ENGINEERING

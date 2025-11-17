@@ -2,6 +2,7 @@
 #define TUMSTUDENTMANAGER_H
 
 #include "Faculty.h"
+#include "IUniversityStorage.h"
 #include <vector>
 
 using namespace std;
@@ -9,15 +10,16 @@ using namespace std;
 class TUMStudentManager {
 private:
     vector<Faculty> faculties;
+    IUniversityStorage& storage;
     void initializeSampleData();
 
 public:
-    TUMStudentManager();
+    // requires a storage implementation (DIP)
+    TUMStudentManager(IUniversityStorage& storageImpl);
 
-    // Read-only access to faculties
     const vector<Faculty>& getFaculties() const;
 
-    // Business operations (no UI)
+    // Operations with single responability, to cout
     bool createFaculty(const string& name, const string& abbreviation, StudyField field);
     bool addStudentToFaculty(size_t facultyIndex, const Student& student);
     bool graduateStudentInFaculty(size_t facultyIndex, const string& email);

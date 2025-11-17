@@ -4,8 +4,10 @@
 
 using namespace std;
 
-TUMStudentManager::TUMStudentManager() {
-    faculties = FileManager::loadData();
+TUMStudentManager::TUMStudentManager(IUniversityStorage& storageImpl)
+    : storage(storageImpl)
+{
+    faculties = storage.load();
     if (faculties.empty()) {
         initializeSampleData();
     }
@@ -62,5 +64,5 @@ bool TUMStudentManager::hasFaculty(size_t index) const {
 }
 
 bool TUMStudentManager::saveData() const {
-    return FileManager::saveData(faculties);
+    return storage.save(faculties);
 }

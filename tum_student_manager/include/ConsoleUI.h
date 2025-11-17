@@ -2,10 +2,12 @@
 #define CONSOLEUI_H
 
 #include "TUMStudentManager.h"
+#include "FileManager.h"
 #include <string>
 
 class ConsoleUI {
 private:
+    FileManager storage;
     TUMStudentManager manager;
 
     void displayMainMenu();
