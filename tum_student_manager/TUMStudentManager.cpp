@@ -305,41 +305,6 @@ void TUMStudentManager::displayFacultiesByField() {
     }
 }
 
-void TUMStudentManager::batchOperations() {
-    cout << "\n--- BATCH OPERATIONS ---" << endl;
-    cout << "1. Batch enroll students from file" << endl;
-    cout << "2. Batch graduate students from file" << endl;
-    cout << "0. Back to main menu" << endl;
-    cout << "Choose an option: ";
-
-    string choice;
-    getline(cin, choice);
-    
-    if (choice == "1") {
-        batchEnrollStudents();
-    } else if (choice == "2") {
-        batchGraduateStudents();
-    } else if (choice == "0") {
-        return;
-    } else {
-        cout << "Invalid option." << endl;
-    }
-}
-
-void TUMStudentManager::batchEnrollStudents() {
-    string filename;
-    cout << "Enter filename for batch enrollment: ";
-    getline(cin, filename);
-    cout << "Batch enrollment from " << filename << " would be implemented here." << endl;
-}
-
-void TUMStudentManager::batchGraduateStudents() {
-    string filename;
-    cout << "Enter filename for batch graduation: ";
-    getline(cin, filename);
-    cout << "Batch graduation from " << filename << " would be implemented here." << endl;
-}
-
 Faculty* TUMStudentManager::selectFaculty() {
     if (faculties.empty()) {
         cout << "No faculties available. Please create a faculty first." << endl;
