@@ -199,19 +199,3 @@ string Individual::classify() const {
         if (max_count == rings_elf || max_count == rings_dwarf) return "rings";
         return "undefined";
 }
-
-void Individual::printInfo() const {
-    cout << "ID: " << id << endl;
-    cout << "Humanoid: " << (isHumanoid ? "Yes" : "No") << endl;
-    cout << "Planet: " << (originPlanet.empty() ? "Unknown" : originPlanet) << endl;
-    cout << "Age: " << (age == -1 ? "Unknown" : to_string(age)) << endl;
-    cout << "Traits: ";
-    if (physicalTraits.empty()) {
-        cout << "None";
-    } else {
-        for (const auto& trait : physicalTraits) {
-            cout << trait << " ";
-        }
-    }
-    cout << endl << "-------------------" << endl;
-}
