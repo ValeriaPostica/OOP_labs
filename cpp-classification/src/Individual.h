@@ -11,6 +11,7 @@ class Individual {
 private:
     int id;
     bool isHumanoid;
+    bool humanoidKnown;
     string originPlanet;
     int age;
     vector<string> physicalTraits;

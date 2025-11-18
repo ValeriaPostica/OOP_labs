@@ -1,0 +1,95 @@
+{
+    "individuals": [
+        {
+            "age": 175,
+            "id": 28
+        },
+        {
+            "id": 36,
+            "isHumanoid": true
+        },
+        {
+            "id": 44
+        },
+        {
+            "age": 153,
+            "id": 47,
+            "traits": [
+                "TALL"
+            ]
+        },
+        {
+            "id": 60,
+            "isHumanoid": true
+        },
+        {
+            "id": 86
+        },
+        {
+            "age": 29,
+            "id": 102
+        },
+        {
+            "age": 82,
+            "id": 111
+        },
+        {
+            "age": 14,
+            "id": 113
+        },
+        {
+            "id": 128
+        },
+        {
+            "age": 1463,
+            "id": 130,
+            "isHumanoid": true
+        },
+        {
+            "age": 183,
+            "id": 139
+        },
+        {
+            "age": 114,
+            "id": 142,
+            "isHumanoid": true
+        },
+        {
+            "id": 147,
+            "isHumanoid": true
+        },
+        {
+            "age": 265,
+            "id": 148,
+            "isHumanoid": true,
+            "traits": [
+                "BLONDE"
+            ]
+        },
+        {
+            "age": 43,
+            "id": 149,
+            "traits": [
+                "SHORT"
+            ]
+        },
+        {
+            "age": 3701,
+            "id": 153,
+            "isHumanoid": true
+        },
+        {
+            "id": 168,
+            "isHumanoid": false
+        },
+        {
+            "age": 4438,
+            "id": 189,
+            "isHumanoid": true,
+            "traits": [
+                "BLONDE"
+            ]
+        }
+    ],
+    "name": "undefined"
+}

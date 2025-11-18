@@ -3,6 +3,7 @@
 #include "FileReader.h"
 #include "Individual.h"
 #include "Universe.h"
+#include "View.h"
 
 using namespace std;
 
@@ -118,11 +119,16 @@ int main() {
 
 
 
-   //day4
-    cout << "RULE-BASED CLASSIFICATION SYSTEM" << endl;
-    
+   //day4 and 5
+    // Create universes (declare outside try so they remain in scope for output)
+    Universe starWars("star-wars");
+    Universe hitchhikers("hitch-hiker");
+    Universe marvel("marvel");
+    Universe rings("rings");
+    Universe undefined("undefined");
+
     try {
-        FileReader reader("cpp-classification/resources/input.json");
+        FileReader reader("cpp-classification/resources/input_full.json");
         auto jsonData = reader.readFile();
         
         json dataArray;
@@ -134,12 +140,6 @@ int main() {
             throw std::runtime_error("Invalid JSON structure: expected array or object with 'data' array");
         }
         
-        // Create universes
-        Universe starWars("star-wars");
-        Universe hitchhikers("hitch-hiker");
-        Universe marvel("marvel");
-        Universe rings("rings");
-        Universe undefined("undefined");
         
         vector<Individual> individuals;
         
@@ -150,18 +150,6 @@ int main() {
             individuals.push_back(individual);
             
             string classification = individual.classify();
-            
-            cout << "ID " << setw(2) << individual.getId() << " -> " << classification;
-            
-            // Show reasoning for undefined cases
-            if (classification == "undefined") {
-                cout << " (";
-                if (!individual.hasPlanet()) cout << "no planet ";
-                if (individual.getPhysicalTraits().empty()) cout << "no traits ";
-                if (!individual.hasAge()) cout << "no age";
-                cout << ")";
-            }
-            cout << endl;
             
             // Add to universe
             if (classification == "star-wars") {
@@ -177,38 +165,29 @@ int main() {
             }
         }
         
-        cout << "\nFINAL CLASSIFICATION SUMMARY" << endl;
         cout << "Star Wars:       " << starWars.getCount() << " individuals" << endl;
         cout << "Hitchhiker's:    " << hitchhikers.getCount() << " individuals" << endl;
         cout << "Marvel:          " << marvel.getCount() << " individuals" << endl;
         cout << "Lord of the Rings: " << rings.getCount() << " individuals" << endl;
         cout << "Undefined:       " << undefined.getCount() << " individuals" << endl;
         
-        cout << "\nSUCCESSFUL CLASSIFICATION EXAMPLES" << endl;
-        int examplesShown = 0;
-        for (const auto& individual : individuals) {
-            string classification = individual.classify();
-            if (classification != "undefined" && examplesShown < 5) {
-                cout << "ID " << individual.getId() << ": " << classification;
-                cout << " - " << (individual.getIsHumanoid() ? "Humanoid" : "Non-humanoid");
-                if (individual.hasPlanet()) cout << " from " << individual.getOriginPlanet();
-                if (!individual.getPhysicalTraits().empty()) {
-                    cout << " with traits: ";
-                    for (const auto& trait : individual.getPhysicalTraits()) {
-                        cout << trait << " ";
-                    }
-                }
-                cout << endl;
-                examplesShown++;
-            }
-        }
-        
     } catch (const exception& e) {
         cerr << "ERROR: " << e.what() << endl;
         return 1;
     }
-    
-    cout << "\nRULE-BASED CLASSIFICATION COMPLETE" << endl;
-    
+
+        // Write universes to output files
+        try {
+            View::writeUniverseToFile(starWars);
+            View::writeUniverseToFile(hitchhikers);
+            View::writeUniverseToFile(marvel);
+            View::writeUniverseToFile(rings);
+            View::writeUniverseToFile(undefined);
+            cout << "\nOutput files written to 'output/'" << endl;
+        } catch (const exception& e) {
+            cerr << "ERROR writing output files: " << e.what() << endl;
+            return 1;
+        }
+
     return 0;
 }
