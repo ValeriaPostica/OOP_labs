@@ -1,0 +1,3 @@
+g++ -std=c++11 -Iinclude (Get-ChildItem -Filter *.cpp -Name) -o tum_student_manager.exe
+
+./tum_student_manager.exe
