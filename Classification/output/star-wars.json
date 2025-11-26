@@ -1,0 +1,373 @@
+{
+    "individuals": [
+        {
+            "age": 296,
+            "id": 1,
+            "isHumanoid": false,
+            "planet": "Kashyyyk"
+        },
+        {
+            "id": 3,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY",
+                "TALL"
+            ]
+        },
+        {
+            "id": 11,
+            "planet": "Kashyyyk",
+            "traits": [
+                "TALL",
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 311,
+            "id": 12,
+            "isHumanoid": false,
+            "planet": "Kashyyyk"
+        },
+        {
+            "id": 16,
+            "isHumanoid": false,
+            "planet": "Endor"
+        },
+        {
+            "id": 26,
+            "planet": "Kashyyyk"
+        },
+        {
+            "age": 33,
+            "id": 31,
+            "isHumanoid": false,
+            "traits": [
+                "HAIRY",
+                "SHORT"
+            ]
+        },
+        {
+            "age": 255,
+            "id": 39,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 17,
+            "id": 40,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 3,
+            "id": 41,
+            "isHumanoid": false,
+            "traits": [
+                "SHORT",
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 268,
+            "id": 42,
+            "isHumanoid": false,
+            "traits": [
+                "HAIRY",
+                "TALL"
+            ]
+        },
+        {
+            "age": 53,
+            "id": 50,
+            "isHumanoid": false,
+            "planet": "Endor"
+        },
+        {
+            "age": 53,
+            "id": 52,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "TALL",
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 3,
+            "id": 63,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "HAIRY",
+                "SHORT"
+            ]
+        },
+        {
+            "age": 375,
+            "id": 75,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY",
+                "TALL"
+            ]
+        },
+        {
+            "id": 76,
+            "planet": "Endor",
+            "traits": [
+                "HAIRY",
+                "SHORT"
+            ]
+        },
+        {
+            "id": 79,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 101,
+            "id": 80,
+            "isHumanoid": false,
+            "planet": "Kashyyyk"
+        },
+        {
+            "age": 14,
+            "id": 87,
+            "planet": "Endor",
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 58,
+            "id": 88,
+            "planet": "Endor"
+        },
+        {
+            "age": 17,
+            "id": 89,
+            "isHumanoid": false,
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 60,
+            "id": 92,
+            "planet": "Endor",
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "id": 94,
+            "isHumanoid": false,
+            "planet": "Endor"
+        },
+        {
+            "age": 285,
+            "id": 97,
+            "isHumanoid": false,
+            "traits": [
+                "TALL",
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 1,
+            "id": 99,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "SHORT",
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 4,
+            "id": 100,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "SHORT",
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 50,
+            "id": 101,
+            "isHumanoid": false,
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 259,
+            "id": 105,
+            "isHumanoid": false,
+            "planet": "Kashyyyk"
+        },
+        {
+            "id": 108,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 80,
+            "id": 122,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "TALL"
+            ]
+        },
+        {
+            "age": 60,
+            "id": 126,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "SHORT"
+            ]
+        },
+        {
+            "age": 29,
+            "id": 132,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY",
+                "TALL"
+            ]
+        },
+        {
+            "id": 143,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "SHORT",
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 265,
+            "id": 158,
+            "isHumanoid": false,
+            "traits": [
+                "HAIRY",
+                "TALL"
+            ]
+        },
+        {
+            "age": 58,
+            "id": 161,
+            "isHumanoid": false,
+            "planet": "Endor"
+        },
+        {
+            "age": 188,
+            "id": 162,
+            "isHumanoid": false,
+            "traits": [
+                "TALL"
+            ]
+        },
+        {
+            "age": 17,
+            "id": 175,
+            "isHumanoid": false,
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 217,
+            "id": 177,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY",
+                "TALL"
+            ]
+        },
+        {
+            "age": 31,
+            "id": 180,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "SHORT"
+            ]
+        },
+        {
+            "id": 182,
+            "isHumanoid": false,
+            "planet": "Endor",
+            "traits": [
+                "SHORT"
+            ]
+        },
+        {
+            "age": 354,
+            "id": 183,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY",
+                "TALL"
+            ]
+        },
+        {
+            "id": 185,
+            "planet": "Endor",
+            "traits": [
+                "SHORT"
+            ]
+        },
+        {
+            "age": 18,
+            "id": 186,
+            "isHumanoid": false,
+            "planet": "Endor"
+        },
+        {
+            "age": 53,
+            "id": 191,
+            "planet": "Endor",
+            "traits": [
+                "HAIRY",
+                "SHORT"
+            ]
+        },
+        {
+            "age": 86,
+            "id": 193,
+            "isHumanoid": false,
+            "planet": "Kashyyyk",
+            "traits": [
+                "HAIRY"
+            ]
+        },
+        {
+            "age": 270,
+            "id": 195,
+            "isHumanoid": false,
+            "planet": "Kashyyyk"
+        }
+    ],
+    "name": "star-wars"
+}

@@ -1,0 +1,15 @@
+{
+    "individuals": [
+        {
+            "age": 2034,
+            "id": 0,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE",
+                "TALL"
+            ]
+        }
+    ],
+    "name": "marvel"
+}

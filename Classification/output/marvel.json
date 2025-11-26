@@ -1,0 +1,193 @@
+{
+    "individuals": [
+        {
+            "age": 3566,
+            "id": 15,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE",
+                "TALL"
+            ]
+        },
+        {
+            "age": 3587,
+            "id": 17,
+            "planet": "Asgard"
+        },
+        {
+            "age": 2705,
+            "id": 22,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "TALL",
+                "BLONDE"
+            ]
+        },
+        {
+            "age": 3731,
+            "id": 45,
+            "isHumanoid": true,
+            "planet": "Asgard"
+        },
+        {
+            "id": 55,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE",
+                "TALL"
+            ]
+        },
+        {
+            "id": 56,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE"
+            ]
+        },
+        {
+            "id": 57,
+            "planet": "Asgard",
+            "traits": [
+                "TALL"
+            ]
+        },
+        {
+            "age": 2954,
+            "id": 61,
+            "traits": [
+                "BLONDE",
+                "TALL"
+            ]
+        },
+        {
+            "id": 64,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE"
+            ]
+        },
+        {
+            "age": 3711,
+            "id": 71,
+            "isHumanoid": true,
+            "traits": [
+                "BLONDE",
+                "TALL"
+            ]
+        },
+        {
+            "id": 74,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE",
+                "TALL"
+            ]
+        },
+        {
+            "age": 3526,
+            "id": 90,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "TALL"
+            ]
+        },
+        {
+            "age": 2340,
+            "id": 95,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "TALL"
+            ]
+        },
+        {
+            "age": 1446,
+            "id": 103,
+            "isHumanoid": true,
+            "planet": "Asgard"
+        },
+        {
+            "id": 106,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE"
+            ]
+        },
+        {
+            "id": 112,
+            "isHumanoid": true,
+            "planet": "Asgard"
+        },
+        {
+            "age": 4869,
+            "id": 124,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "BLONDE",
+                "TALL"
+            ]
+        },
+        {
+            "age": 4297,
+            "id": 140,
+            "isHumanoid": true,
+            "planet": "Asgard"
+        },
+        {
+            "id": 159,
+            "planet": "Asgard"
+        },
+        {
+            "age": 1134,
+            "id": 160,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "TALL",
+                "BLONDE"
+            ]
+        },
+        {
+            "age": 3783,
+            "id": 164,
+            "traits": [
+                "TALL",
+                "BLONDE"
+            ]
+        },
+        {
+            "age": 1732,
+            "id": 173,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "TALL",
+                "BLONDE"
+            ]
+        },
+        {
+            "age": 289,
+            "id": 176,
+            "isHumanoid": true,
+            "planet": "Asgard",
+            "traits": [
+                "TALL",
+                "BLONDE"
+            ]
+        },
+        {
+            "age": 1123,
+            "id": 194,
+            "isHumanoid": true,
+            "planet": "Asgard"
+        }
+    ],
+    "name": "marvel"
+}

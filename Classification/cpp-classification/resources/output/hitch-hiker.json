@@ -1,0 +1,20 @@
+{
+    "individuals": [
+        {
+            "age": 128,
+            "id": 2,
+            "isHumanoid": false,
+            "traits": [
+                "GREEN"
+            ]
+        },
+        {
+            "age": 26,
+            "id": 4,
+            "traits": [
+                "EXTRA_ARMS"
+            ]
+        }
+    ],
+    "name": "hitch-hiker"
+}
