@@ -72,7 +72,6 @@ class PeopleDinner : public Dineable {
 public:
     void serveDinner(const string& carId) override {
         cout << "Serving dinner to people in " << carId << endl;
-        ServiceStats::getInstance()->incrementPeople();
     }
 };
 
@@ -80,7 +79,6 @@ class RobotDinner : public Dineable {
 public:
     void serveDinner(const string& carId) override {
         cout << "Serving dinner to robots in " << carId << endl;
-        ServiceStats::getInstance()->incrementRobots();
     }
 };
 
