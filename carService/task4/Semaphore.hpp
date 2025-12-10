@@ -70,15 +70,11 @@ public:
 
     void serveAll() {
         cout << "\nSERVING ALL 4 STATIONS" << endl;
-        cout << "\n1. Electric-People Station:" << endl;
         stationElectricPeople->serveCars();
-        cout << "\n2. Electric-Robots Station:" << endl;
         stationElectricRobots->serveCars();
-        cout << "\n3. Gas-People Station:" << endl;
         stationGasPeople->serveCars();
-        cout << "\n4. Gas-Robots Station:" << endl;
         stationGasRobots->serveCars();
-        cout << "ALL STATIONS COMPLETED" << endl;
+        cout << "ALL STATIONS COMPLETED\n" << endl;
     }
 
     // Get statistics using ServiceStats from Task 2

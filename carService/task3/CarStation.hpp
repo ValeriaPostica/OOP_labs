@@ -23,7 +23,6 @@ public:
     }
     
     void serveCars() {
-        cout << "STARTING CAR SERVICE" << endl;
         
         ServiceStats* globalStats = ServiceStats::getInstance();
         
@@ -31,7 +30,7 @@ public:
             // 1. Dequeue next car (FIFO)
             Car car = carQueue->dequeue();
             
-            cout << "\nProcessing Car " << car.getId() << ":" << endl;
+            cout << "Processing Car " << car.getId() << ":" << endl;
             car.print();
             
             string carId = "car" + to_string(car.getId());
@@ -51,7 +50,6 @@ public:
             cout << "  Service completed for Car " << car.getId() << endl;
         }
         
-        cout << "ALL CARS SERVED" << endl;
     }
     
     bool isQueueEmpty() const {
